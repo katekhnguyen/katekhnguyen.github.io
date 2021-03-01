@@ -4,8 +4,69 @@
   font-family: sans-serif;
 }
 
-body{
-  background-color:lightslategrey;
-  background-position: center;
-  background-size: cover;
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body 
+{
+  margin: 0;
+  background-image: url("br.jpg")
+}
+
+section 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+section:nth-child(even) 
+{
+    background: rgba(255, 255, 255, 0.774);
+    color: teal;
+} 
+
+section:nth-child(odd) 
+{
+    background: rgba(101, 119, 85, 0.671);
+    color: white;
+} 
+
+section:before 
+{
+    content: attr(data-text);
+    color: #262626;
+    font-size: 8em;
+}
+
+ul 
+{
+    width:100%;
+    background: rgba(47, 79, 79, 0.877);
+    height: 50px;
+    margin: 0;
+    padding:0;
+    position:fixed;
+    top:0;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+ul li a
+{
+    color: gainsboro;
+    line-height: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: none;
+    text-decoration: none;
 }
