@@ -35,7 +35,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 7vh;
     width: 100%;
     background-color: rgba(47, 79, 79, 0.877);
     position: fixed;
@@ -62,12 +62,21 @@ nav{
     text-decoration: none;
     font-size: 15px;
     letter-spacing: 1px;
+    border-bottom: 2px dashed gray;
+    padding: 5px 2px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .tabs a:hover 
 {
     color: greenyellow;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    border-bottom: 2px solid black; 
+    font-weight: bold;
 }
 
 .tabs a:active 
@@ -109,8 +118,8 @@ nav{
     {
         position: absolute;
         right: 0;
-        height: 92vh;
-        top: 8vh;
+        height: 93vh;
+        top: 7vh;
         background-color: rgba(37, 63, 63, 0.877);
         flex-direction: column;
         align-items: center;
